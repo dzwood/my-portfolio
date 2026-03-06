@@ -1,4 +1,4 @@
-import React, { HTMLAttributes } from 'react';
+import React, { type HTMLAttributes } from 'react';
 import './Section.css';
 
 interface SectionProps extends HTMLAttributes<HTMLElement> {
