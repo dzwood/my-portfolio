@@ -1,0 +1,98 @@
+.project-card {
+  background-color: var(--color-bg-base);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.project-card:hover {
+  border-color: var(--color-border-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.5);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-1);
+}
+
+.project-role {
+  color: var(--color-text-tertiary);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.project-link {
+  color: var(--color-text-secondary);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+  padding: var(--space-2);
+  margin: calc(var(--space-2) * -1);
+  border-radius: var(--radius-full);
+}
+
+.project-link:hover {
+  color: var(--color-accent);
+  transform: translate(2px, -2px);
+  background-color: var(--color-accent-dim);
+}
+
+.project-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.project-subtitle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-tertiary);
+  margin-bottom: var(--space-2);
+}
+
+.project-text {
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project-footer {
+  margin-top: auto;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.project-tech-tag {
+  font-size: 0.75rem;
+  padding: var(--space-1) var(--space-3);
+  background-color: var(--color-bg-surface-hover);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .project-card {
+    padding: var(--space-6);
+  }
+}
