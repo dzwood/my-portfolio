@@ -7,6 +7,7 @@ interface ProjectCardProps {
   year: string;
   problem: string;
   solution: string;
+  architecture?: string;
   impact: string;
   techStack: string[];
   link?: string;
@@ -18,6 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   year,
   problem,
   solution,
+  architecture,
   impact,
   techStack,
   link
@@ -48,6 +50,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <h4 className="project-subtitle">The Solution</h4>
           <p className="project-text">{solution}</p>
         </div>
+        
+        {architecture && (
+          <div className="project-section">
+            <h4 className="project-subtitle">Architecture</h4>
+            <p className="project-text">{architecture}</p>
+          </div>
+        )}
         
         <div className="project-section">
           <h4 className="project-subtitle">The Impact</h4>

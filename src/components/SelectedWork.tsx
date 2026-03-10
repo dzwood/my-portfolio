@@ -11,9 +11,11 @@ const projects = [
     problem:
       "Impact City FC needed a scalable way to deliver structured coaching content and training resources online to players and coaches across multiple regions.",
     solution:
-      "Designed and launched an online course platform using Webflow and Memberstack with Stripe-powered subscription billing. Built a scalable structure for video lessons, gated training resources, and member accounts while enabling non-technical staff to manage course content through a CMS. Architecture: Webflow frontend with Memberstack authentication and gated content, Stripe billing for subscriptions, and CMS-driven course management.",
+      "Designed and launched an online course platform using Webflow and Memberstack with Stripe-powered subscription billing. Built a scalable structure for video lessons, gated training resources, and member accounts while enabling non-technical staff to manage course content through a CMS.",
+    architecture:
+      "Webflow frontend with Memberstack handling authentication and gated content, Stripe managing subscription billing, and a CMS-driven content structure for course management.",
     impact:
-      "Enabled Impact City FC to deliver digital coaching programs nationwide through a scalable online training platform with subscription billing, allowing the organization to distribute structured training content and gated resources to players and coaches across multiple regions.",
+      "Enabled Impact City FC to deliver digital coaching programs nationwide and distribute structured training content and gated resources to players and coaches across multiple regions.",
     techStack: [
       "Webflow",
       "Memberstack",
@@ -29,9 +31,11 @@ const projects = [
     problem:
       "Organizations needed a simple system to manage volunteers, track participation, and process payments without building a custom backend from scratch.",
     solution:
-      "Built a volunteer management platform using Softr with Airtable as the database and Stripe for payments. Designed the data structure for volunteers, organizations, and participation records while enabling organizations to manage operations through a simple interface. Architecture: Softr frontend interface backed by Airtable as the relational data layer with Stripe handling payments and registrations.",
+      "Built a volunteer management platform using Softr with Airtable as the database and Stripe for payments. Designed the data structure for volunteers, organizations, and participation records while enabling organizations to manage operations through a simple interface.",
+    architecture:
+      "Softr frontend interface backed by Airtable as the relational data layer with Stripe handling payments and registration workflows.",
     impact:
-      "Delivered a production-ready volunteer management platform that automated volunteer registration, payments, and participation tracking, allowing organizations to manage volunteers and operational workflows through a centralized system.",
+      "Delivered a production-ready platform that automated volunteer registration, payments, and participation tracking while providing organizations with a centralized system to manage operations.",
     techStack: ["Softr", "Airtable", "Stripe", "JavaScript", "Database Design"],
   },
 ];

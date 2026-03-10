@@ -7,7 +7,7 @@ const Approach: React.FC = () => {
     {
       title: "Performance First",
       description:
-        "I build fast, responsive applications that score high on Core Web Vitals. Optimizing assets, leveraging edge caching, and minimizing main-thread work are default practices, not afterthoughts.",
+        "I prioritize fast, responsive applications by optimizing rendering, caching strategies, and bundle size. Strong Core Web Vitals and performance budgets are part of the development process from the start.",
       icon: (
         <svg
           width="24"
@@ -26,7 +26,7 @@ const Approach: React.FC = () => {
     {
       title: "Scalable Architecture",
       description:
-        "From monolithic refactors to micro-frontends, I design systems that grow with the business. I favor clean separation of concerns, robust TypeScript typing, and reusable design systems.",
+        "I design systems that grow with product needs by focusing on modular components, clear separation of concerns, and maintainable TypeScript codebases.",
       icon: (
         <svg
           width="24"
@@ -45,9 +45,9 @@ const Approach: React.FC = () => {
       ),
     },
     {
-      title: "Production Readiness",
+      title: "Developer Experience",
       description:
-        "Shipping code is only half the job. I ensure platforms are observable, securely tested, and deployed via resilient CI/CD pipelines to guarantee 99.9% uptime for mission-critical products.",
+        "I build systems that are easy for other engineers to work with — clear abstractions, reusable components, documentation, and maintainable patterns.",
       icon: (
         <svg
           width="24"
@@ -59,8 +59,28 @@ const Approach: React.FC = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
-          <polyline points="22 4 12 14.01 9 11.01" />
+          <polyline points="16 18 22 12 16 6" />
+          <polyline points="8 6 2 12 8 18" />
+        </svg>
+      ),
+    },
+    {
+      title: "Ship & Iterate",
+      description:
+        "I focus on delivering value quickly while maintaining quality, enabling teams to launch features, gather feedback, and iterate on real user needs.",
+      icon: (
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M22 2L11 13" />
+          <path d="M22 2l-7 20-4-9-9-4 20-7z" />
         </svg>
       ),
     },
@@ -69,8 +89,8 @@ const Approach: React.FC = () => {
   return (
     <Section
       id="approach"
-      title="Engineering Approach"
-      subtitle="How I design and ship scalable production platforms with strong performance, maintainability, and developer experience."
+      title="Engineering Principles"
+      subtitle="The principles that guide how I design and build systems."
     >
       <div className="approach-grid">
         {principles.map((principle, index) => (
