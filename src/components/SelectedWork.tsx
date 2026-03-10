@@ -1,49 +1,56 @@
-import React from 'react';
-import Section from './Section';
-import ProjectCard from './ProjectCard';
-import './SelectedWork.css';
+import React from "react";
+import Section from "./Section";
+import ProjectCard from "./ProjectCard";
+import "./SelectedWork.css";
 
 const projects = [
   {
-    title: 'Impact City FC - Online Course Platform',
-    role: 'Lead Full-Stack Engineer',
-    year: '2023',
-    problem: 'The client needed a scalable, custom learning management system (LMS) to deliver structured online coaching content to thousands of youth players and coaches across multiple regions.',
-    solution: 'Built a high-performance React-based learning platform integrated with a headless CMS to manage video content and coaching curriculum. Engineered a role-based access control system and Stripe-powered subscription billing.',
-    impact: 'Increased engagement by delivering a frictionless video learning experience, generating new recurring subscription revenue streams and scaling to support 5,000+ active users with 99.9% uptime.',
-    techStack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe', 'Sanity CMS', 'Vercel']
+    title: "Impact City FC — Online Course Platform",
+    role: "Product / Platform Developer (Contract)",
+    year: "2023",
+    problem:
+      "Impact City FC needed a scalable way to deliver structured coaching content and training resources online to players and coaches across multiple regions.",
+    solution:
+      "Designed and launched an online course platform using Webflow and Memberstack with Stripe-powered subscription billing. Built a scalable structure for video lessons, gated training resources, and member accounts while enabling non-technical staff to manage course content through a CMS. Architecture: Webflow frontend with Memberstack authentication and gated content, Stripe billing for subscriptions, and CMS-driven course management.",
+    impact:
+      "Enabled Impact City FC to deliver digital coaching programs nationwide through a scalable online training platform with subscription billing, allowing the organization to distribute structured training content and gated resources to players and coaches across multiple regions.",
+    techStack: [
+      "Webflow",
+      "Memberstack",
+      "Stripe",
+      "JavaScript",
+      "CMS Architecture",
+    ],
   },
   {
-    title: 'Enterprise Web Platform Modernization',
-    role: 'Senior React Developer',
-    year: '2022',
-    problem: 'A legacy monolithic application was suffering from poor Core Web Vitals, slow deployment cycles, and an unmaintainable React codebase that hindered the product team\'s ability to ship new features.',
-    solution: 'Led the migration to a modern Next.js architecture using Incremental Static Regeneration (ISR). Refactored legacy components into a reusable design system and implemented GraphQL for optimized data fetching.',
-    impact: 'Improved page load speeds by 65%, driving a 15% increase in conversion rates. Reduced CI/CD build times from 45 minutes to 8 minutes, dramatically improving developer velocity.',
-    techStack: ['Next.js', 'React', 'GraphQL', 'Apollo', 'Styled Components', 'Node.js', 'AWS']
+    title: "Volunteer Platform",
+    role: "Product / Platform Developer (Contract)",
+    year: "2024",
+    problem:
+      "Organizations needed a simple system to manage volunteers, track participation, and process payments without building a custom backend from scratch.",
+    solution:
+      "Built a volunteer management platform using Softr with Airtable as the database and Stripe for payments. Designed the data structure for volunteers, organizations, and participation records while enabling organizations to manage operations through a simple interface. Architecture: Softr frontend interface backed by Airtable as the relational data layer with Stripe handling payments and registrations.",
+    impact:
+      "Delivered a production-ready volunteer management platform that automated volunteer registration, payments, and participation tracking, allowing organizations to manage volunteers and operational workflows through a centralized system.",
+    techStack: ["Softr", "Airtable", "Stripe", "JavaScript", "Database Design"],
   },
-  {
-    title: 'Premium Membership & Digital Content Hub',
-    role: 'Full-Stack Developer',
-    year: '2021',
-    problem: 'A creator needed to launch a gated content community fast, requiring complex user authentication, gated digital assets, and automated member onboarding without spending months on custom backend development.',
-    solution: 'Architected a low-code/pro-code hybrid solution combining Webflow for the frontend, Memberstack for secure authentication, and Airtable as the database, glued together via custom Node.js webhooks and Zapier.',
-    impact: 'Launched the MVP in under 4 weeks, enabling the creator to validate the business model and process over $50k in first-month revenue. The automated architecture eliminated manual admin work.',
-    techStack: ['Webflow', 'Memberstack', 'Airtable', 'Node.js', 'Zapier', 'JavaScript']
-  }
 ];
 
 const SelectedWork: React.FC = () => {
   return (
-    <Section 
-      id="work" 
-      title="Selected Work" 
+    <Section
+      id="work"
+      title="Selected Work"
       subtitle="A showcase of digital products, scalable platforms, and architectural solutions I've engineered."
       className="selected-work-section"
     >
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <div key={index} className="project-wrapper" style={{ animationDelay: `${index * 0.15}s` }}>
+          <div
+            key={index}
+            className="project-wrapper"
+            style={{ animationDelay: `${index * 0.15}s` }}
+          >
             <ProjectCard {...project} />
           </div>
         ))}
