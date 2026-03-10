@@ -1,9 +1,10 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import SelectedWork from './components/SelectedWork';
-import Approach from './components/Approach';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import SelectedWork from "./components/SelectedWork";
+import Experience from "./components/Experience";
+import Approach from "./components/Approach";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main id="main">
         <Hero />
         <SelectedWork />
+        <Experience />
         <Approach />
         <Contact />
       </main>
