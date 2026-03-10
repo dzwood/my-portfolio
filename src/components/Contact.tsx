@@ -17,7 +17,7 @@ const Contact: React.FC = () => {
           <div className="contact-actions">
             <Button
               as="a"
-              href="mailto:danielzwood@gmail.com"
+              href="mailto:dzwood327@gmail.com"
               variant="primary"
               size="lg"
             >
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
           </div>
           <div className="info-item">
             <h4 className="info-label">Email</h4>
-            <p className="info-value">danielzwood@gmail.com</p>
+            <p className="info-value">dzwood327@gmail.com</p>
           </div>
           <div className="info-item">
             <h4 className="info-label">Socials</h4>

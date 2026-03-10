@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
           <div className="footer-links">
             <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="mailto:hello@example.com">Email</a>
+            <a href="mailto:dzwood327@gmail.com">Email</a>
           </div>
         </div>
         <div className="footer-bottom">
