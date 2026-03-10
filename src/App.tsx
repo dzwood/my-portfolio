@@ -8,8 +8,11 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
       <Header />
-      <main>
+      <main id="main">
         <Hero />
         <SelectedWork />
         <Approach />

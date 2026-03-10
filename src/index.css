@@ -99,3 +99,20 @@ ul, ol {
     padding: 0 var(--space-4);
   }
 }
+
+/* Skip to main content - visible on focus for keyboard users */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-bg-surface);
+  color: var(--color-accent);
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.skip-link:focus {
+  left: var(--space-4);
+  top: var(--space-4);
+}
