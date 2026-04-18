@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
             <p className="footer-title">Senior Full-Stack Engineer</p>
           </div>
           <div className="footer-links">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/dzwood" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/daniel-wood-973322198" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:dzwood327@gmail.com">Email</a>
           </div>
         </div>
